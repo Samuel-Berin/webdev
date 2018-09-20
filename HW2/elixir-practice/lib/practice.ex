@@ -29,6 +29,7 @@ defmodule Practice do
       factor(div(x,acc), 2, acc ++ list)
     else
       factor(x, acc + 1, list)
+    end
   end
 
   def palindrome(str) do
