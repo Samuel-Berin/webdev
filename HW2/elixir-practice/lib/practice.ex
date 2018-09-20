@@ -34,7 +34,7 @@ defmodule Practice do
 
   def palindrome(str) do
     rev = Enum.reverse(String.graphemes(str))
-    if rev == str do
+    if rev == String.graphemes(str) do
       True
     else
       False
