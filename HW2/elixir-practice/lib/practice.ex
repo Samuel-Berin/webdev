@@ -21,7 +21,7 @@ defmodule Practice do
   end
 
   def factor(x, acc, list) when x == 1 do
-    sort(list)
+    Enum.sort(list)
   end
 
   def factor(x, acc, list) do
