@@ -1,0 +1,17 @@
+#BatB {
+  color: blue;
+}
+
+#BatA {
+  color: red;
+}
+
+#BatT {
+  color: green;
+}
+
+table, th, tr, td {
+  border: 4px solid;
+  border-collapse: collapse;
+  padding: 5px;
+}
