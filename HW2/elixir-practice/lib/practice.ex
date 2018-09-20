@@ -21,7 +21,7 @@ defmodule Practice do
     if is_integer(val) do
       factor(val, 2, [])
     end
-    []
+    x
   end
 
   def factor(x, acc, list) when x == 1 do
