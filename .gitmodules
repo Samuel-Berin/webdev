@@ -1,0 +1,3 @@
+[submodule "HW2/elixir-practice"]
+	path = HW2/elixir-practice
+	url = git://https://github.com/Samuel-Berin/elixir-practice
