@@ -22,7 +22,7 @@ defmodule PracticeWeb.PageController do
   end
 
   def palindrome(conn, %{"str" => str}) do
-    b = Practice.palindrome(x)
+    b = Practice.palindrome(str)
     render conn, "palindrome.html", str: str, b: b
   end
 
