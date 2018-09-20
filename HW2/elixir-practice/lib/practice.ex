@@ -22,7 +22,7 @@ defmodule Practice do
   end
 
   def palindrome(str) do
-    return False
+    False
   end
 
 end
