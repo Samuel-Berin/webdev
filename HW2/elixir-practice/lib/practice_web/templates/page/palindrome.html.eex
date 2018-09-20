@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="column">
+    <p><%= link "← go back", to: "/" %></p>
+    <h2>Is it a Palindrome?</h2>
+
+    <p>Original String = <%= @str %></p>
+    <p>Palindrome? <%= @b %></p>
+  </div>
+</div>
