@@ -17,12 +17,28 @@ defmodule Practice do
   end
 
   def factor(x) do
-    # Maybe delegate this too.
-    [1,2,x]
+    factor(x, 2, [])
+  end
+
+  def factor(x, acc, list) when x == 1 do
+    list
+  end
+
+  def factor(x, acc, list)
+    if rem(div(x, acc)) == 0 do
+      factor(div(x,acc), 2, acc ++ list)
+    else
+      factor(x, acc + 1, list)
+    end
   end
 
   def palindrome(str) do
-    False
+    @rev = String.grapheme(str)
+    if @rev == str do
+      True
+    else
+      False
+    end
   end
 
 end
