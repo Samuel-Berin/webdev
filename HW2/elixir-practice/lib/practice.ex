@@ -33,8 +33,8 @@ defmodule Practice do
   end
 
   def palindrome(str) do
-    @rev = String.grapheme(str)
-    if @rev == str do
+    rev = String.graphemes(str)
+    if rev == str do
       True
     else
       False
