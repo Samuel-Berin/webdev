@@ -17,11 +17,14 @@ defmodule Practice do
   end
 
   def factor(x) do
-    val = String.to_integer(x)
-    if is_integer(val) do
+
+    if is_integer(x) or is_float(x) do
+      factor(x, 2, [])
+
+    else
+      val = String.to_integer(x)
       factor(val, 2, [])
     end
-    x
   end
 
   def factor(x, acc, list) when x == 1 do
