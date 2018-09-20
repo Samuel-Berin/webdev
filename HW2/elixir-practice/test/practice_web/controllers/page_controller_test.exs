@@ -21,8 +21,8 @@ defmodule PracticeWeb.PageControllerTest do
     assert html_response(conn, 200) =~ "17"
   end
 
-  test "palindrome hi", %{conn: conn} do
-    conn = post conn, "/palindrome", %{"str" => "hi"}
+  test "palindrome \"hi\"", %{conn: conn} do
+    conn = post conn, "/palindrome", %{"str" => "\"hi\""}
     assert html_response(conn, 200) =~ "false"
   end
 

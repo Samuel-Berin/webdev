@@ -21,7 +21,7 @@ defmodule Practice do
   end
 
   def factor(x, acc, list) when x == 1 do
-    list
+    sort(list)
   end
 
   def factor(x, acc, list) do
@@ -33,11 +33,11 @@ defmodule Practice do
   end
 
   def palindrome(str) do
-    rev = String.graphemes(str)
+    rev = Enum.reverse(String.graphemes(str))
     if rev == str do
-      rev
+      True
     else
-      rev
+      False
     end
   end
 
