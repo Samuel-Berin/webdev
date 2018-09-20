@@ -26,7 +26,7 @@ defmodule Practice do
 
   def factor(x, acc, list) do
     if rem(x, acc) == 0 do
-      factor(div(x,acc), 2, acc ++ list)
+      factor(div(x,acc), 2, [acc | list])
     else
       factor(x, acc + 1, list)
     end
@@ -35,9 +35,9 @@ defmodule Practice do
   def palindrome(str) do
     rev = String.graphemes(str)
     if rev == str do
-      True
+      rev
     else
-      False
+      rev
     end
   end
 
