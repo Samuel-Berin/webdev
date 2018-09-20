@@ -24,7 +24,7 @@ defmodule Practice do
     list
   end
 
-  def factor(x, acc, list)
+  def factor(x, acc, list) do
     if rem(x, acc) == 0 do
       factor(div(x,acc), 2, acc ++ list)
     else
