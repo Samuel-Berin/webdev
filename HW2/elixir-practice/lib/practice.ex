@@ -19,6 +19,7 @@ defmodule Practice do
   def factor(x) do
     # Maybe delegate this too.
     [1,2,x]
+  end
 
   def palindrome(str) do
     return False
