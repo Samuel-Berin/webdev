@@ -17,14 +17,7 @@ defmodule Practice do
   end
 
   def factor(x) do
-
-    if is_integer(x) or is_float(x) do
       factor(x, 2, [])
-
-    else
-      val = String.to_integer(x)
-      factor(val, 2, [])
-    end
   end
 
   def factor(x, acc, list) when x == 1 do
@@ -39,12 +32,12 @@ defmodule Practice do
     end
   end
 
-  def palindrome(str) do
+  def palindrome(str) when is_string(str) do
     rev = Enum.reverse(String.graphemes(str))
     if rev == String.graphemes(str) do
-      "True"
+      True
     else
-      "False"
+      False
     end
   end
 
