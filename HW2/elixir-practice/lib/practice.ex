@@ -17,7 +17,7 @@ defmodule Practice do
   end
 
   def factor(x) do
-    factor(String.to_integer(x))
+    factor(x, 2, [])
   end
 
   def factor(x, acc, list) when x == 1 do
@@ -25,7 +25,6 @@ defmodule Practice do
   end
 
   def factor(x, acc, list) do
-
     if rem(x, acc) == 0 do
       factor(div(x,acc), 2, [acc | list])
     else
