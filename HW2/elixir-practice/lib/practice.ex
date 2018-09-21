@@ -16,12 +16,12 @@ defmodule Practice do
     Practice.Calc.calc(expr)
   end
 
-  def factor(x) when is_integer(x) do
+  def factor(x) when is_integer(x) or is_float(x) do
       factor(x, 2, [])
   end
 
   def factor(x) do
-    x
+    factor(String.toInteger(x))
   end
 
   def factor(x, acc, list) when x == 1 do
