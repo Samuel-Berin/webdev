@@ -20,15 +20,16 @@ defmodule Practice do
       factor(x, 2, [])
   end
 
+  def factor(x) when is_string(x) do
+    val = String.to_integer(x)
+    factor(val, 2, [])
+  end
+
   def factor(x, acc, list) when x == 1 do
     Enum.sort(list)
   end
 
   def factor(x, acc, list) do
-
-    if is_string(x) do
-      x = String.to_integer(x)
-    end
 
     if rem(x, acc) == 0 do
       factor(div(x,acc), 2, [acc | list])
