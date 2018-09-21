@@ -32,7 +32,7 @@ defmodule Practice do
     end
   end
 
-  def palindrome(str) when is_string(str) do
+  def palindrome(str) do
     rev = Enum.reverse(String.graphemes(str))
     if rev == String.graphemes(str) do
       True
