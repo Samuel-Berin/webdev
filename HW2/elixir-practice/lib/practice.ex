@@ -16,11 +16,11 @@ defmodule Practice do
     Practice.Calc.calc(expr)
   end
 
-  def factor(x) do
+  def factor(x) when is_integer(x) do
       factor(x, 2, [])
   end
 
-  def factor(x) when is_string(x) do
+  def factor(x) do
     val = String.to_integer(x)
     factor(val, 2, [])
   end
