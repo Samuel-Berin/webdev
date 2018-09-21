@@ -21,7 +21,7 @@ defmodule Practice do
   end
 
   def factor(x) do
-    factor(String.toInteger(x))
+    factor(String.to_integer(x))
   end
 
   def factor(x, acc, list) when x == 1 do
